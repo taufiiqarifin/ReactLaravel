@@ -6,7 +6,7 @@ This project uses Laravel as the backend API and React as the frontend (via Lara
 📁 Project Initialization
 
 composer create-project laravel/laravel ReactBackend
-cd ReactBackend
+cd ReactBackend <br>
 ⚙️ Install Laravel Breeze (React Frontend)
 
 composer require laravel/breeze --dev
@@ -17,7 +17,7 @@ npm run dev
 
 composer require spatie/laravel-permission
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
-php artisan migrate
+php artisan migrate <br>
 🖼️ Install Spatie Media Library
 
 composer require spatie/laravel-medialibrary
@@ -29,20 +29,20 @@ composer require spatie/laravel-activitylog
 php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="activitylog-migrations"
 php artisan migrate
 
-🧩 Custom Components
-🎯 Create Role & Permission Seeder
+🧩 Custom Components<br>
+🎯 Create Role & Permission Seeder<br>
 
-php artisan make:seeder RolePermissionSeeder
+php artisan make:seeder RolePermissionSeeder<br>
 ✅ Create CheckPermission Middleware
 
-php artisan make:middleware CheckPermission
-🚀 Running the Development Servers
+php artisan make:middleware CheckPermission<br>
+🚀 Running the Development Servers<br>
 Terminal 1 – Laravel Backend:
 
 php artisan serve
 Terminal 2 – React Frontend:
 
-npm run dev
-🌱 Seed the Database
+npm run dev<br>
+🌱 Seed the Database<br>
 
 php artisan db:seed --class=RolePermissionSeeder
