@@ -22,7 +22,7 @@ php artisan migrate <br>
 
 composer require spatie/laravel-medialibrary
 php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
-php artisan migrate
+php artisan migrate<br>
 📋 Install Spatie Activity Log
 
 composer require spatie/laravel-activitylog
