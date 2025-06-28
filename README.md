@@ -28,6 +28,7 @@ php artisan migrate
 composer require spatie/laravel-activitylog
 php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="activitylog-migrations"
 php artisan migrate
+
 🧩 Custom Components
 🎯 Create Role & Permission Seeder
 
