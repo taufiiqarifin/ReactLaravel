@@ -10,10 +10,11 @@ use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
+use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasRoles, LogsActivity;
+    use HasApiTokens, HasRoles, LogsActivity;
 
     protected $fillable = [
         'name', 'email', 'password',
