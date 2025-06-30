@@ -1,7 +1,9 @@
 import React from "react";
 import Logo from "../../../public/Logo.png";
 import { IoMdSearch } from "react-icons/io";
-import { FaCartShopping } from "react-icons/fa6";
+import { FaUserLarge } from "react-icons/fa6";
+import { Link } from "@inertiajs/react";
+
 const Menu = [
     {
         id: 1,
@@ -50,7 +52,7 @@ const Navbar = () => {
                             onClick={() => alert("Ordering not available yet")}
                             className="bg-gradient-to-r from-primary to-secondary text-white p-2 rounded-full flex items-center justify-center"
                         >
-                            <FaCartShopping className="text-xl" />
+                            <FaUserLarge className="text-xl" />
                         </button>
                     </div>
                 </div>
@@ -62,12 +64,12 @@ const Navbar = () => {
                     <ul className="flex justify-center items-center gap-6 py-2">
                         {Menu.map((data) => (
                             <li key={data.id}>
-                                <a
+                                <Link
                                     href={data.link}
                                     className="text-sm font-medium text-black hover:text-primary transition duration-200 px-2"
                                 >
                                     {data.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
